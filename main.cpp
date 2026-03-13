@@ -83,7 +83,7 @@ public:
         this->p = other.p;
         this->ref_counter = other.ref_counter;
         (*ref_counter)++;
-    };
+    }
 
     MyShared(MyShared&& other) noexcept
     {
